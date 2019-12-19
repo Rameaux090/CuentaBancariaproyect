@@ -46,21 +46,30 @@ public class CuentaTest extends TestCase {
         Cuenta miCuenta = new Cuenta("Antonio Sánchez","1000-2365-85-123456799",4500,0);
         miCuenta.ingresar(cantidad);
                 
-        try {
-          miCuenta.ingresar(cantidad);
-          fail("Intento de ingresar un numero negativo de euros");
-        } catch (Exception e){
-        System.out.println(e);
-            assertTrue(miCuenta.estado()==4500);
-                 
-         }
-        }
      
     }
    
     
-    /**
-     * Test of retirar method, of class Cuenta.
+    
+     /**
+     *  me quedan 3 metodos de pruebas por realizar
      */
    
+ public void testRetirar() throws Exception {
+        System.out.println("retirar");
+        double cantidad = 0.0;
+        Cuenta instance = new Cuenta();
+        instance.retirar(cantidad);
+       
+    }
+    
+ 
+     public void testRetirar2() throws Exception {
+        System.out.println("retirar");
+        double cantidad = 0.0;
+        Cuenta instance = new Cuenta();
+        instance.retirar(cantidad);
+       
+     }
 
+    
